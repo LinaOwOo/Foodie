@@ -1,19 +1,49 @@
 name: foodie
-description: "A new Flutter project."
+description: Simple nutrition tracking app without registration
 publish_to: 'none'
-version: 0.1.0+1
+version: 1.0.0+1
 
 environment:
-  sdk: ^3.11.0
+  sdk: '>=3.0.0 <4.0.0'
 
 dependencies:
   flutter:
     sdk: flutter
+  
+  # State Management
+  flutter_riverpod: ^2.4.9
+  
+  # Local Storage
+  shared_preferences: ^2.2.2
+  
+  # Unique ID Generation
+  uuid: ^4.2.1
+  
+  # Date Formatting
+  intl: ^0.18.1
+  
+  # iOS Style Icons
+  cupertino_icons: ^1.0.6
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^6.0.0
+  
+  # Linting Rules
+  flutter_lints: ^3.0.1
 
 flutter:
   uses-material-design: true
+  
+  # Fonts (опционально, если будете добавлять кастомные шрифты)
+  # fonts:
+  #   - family: SF Pro Display
+  #     fonts:
+  #       - asset: assets/fonts/SFProDisplay-Regular.ttf
+  #       - asset: assets/fonts/SFProDisplay-Bold.ttf
+  #         weight: 700
+  
+  # Assets (опционально, если будете добавлять изображения)
+  # assets:
+  #   - assets/images/
+  #   - assets/icons/
